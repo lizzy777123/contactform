@@ -7,6 +7,7 @@
     <div class="row g-4">
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="sidebar-content">
+
           <div class="sidebar-intro">
             <h3 class="sidebar-heading">Get in Touch</h3>
             <p class="sidebar-text">Send us a message and we’ll get back to you within 24 hours.</p>
@@ -18,7 +19,7 @@
             </div>
             <div class="contact-block-body">
               <span class="contact-block-label">Email</span>
-              <a href="lizzy777123@outlook.com" class="contact-block-value">lizzy777123@outlook.com</a>
+              <a href="mailto:lizzy777123@outlook.com" class="contact-block-value">lizzy777123@outlook.com</a>
             </div>
           </div>
 
@@ -38,11 +39,21 @@
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
         <div class="form-card">
 
-          <!-- Sends completed forms to your desired email address -->
+          <!-- Contact Form -->
           <form action="https://formsubmit.co/lizzy777123@outlook.com" method="POST">
 
+            <!-- Disable captcha -->
             <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="thankyou.html">
+
+            <!-- Redirect after submission -->
+            <input type="hidden" name="_next" value="https://www.aweravisuals.com/contact">
+
+            <!-- Auto-reply email -->
+            <input type="hidden" name="_autoresponse" value="Hi there 👋
+
+Thanks for contacting Awera Visuals. We’ve received your message and will respond within 24 hours.
+
+— Awera Visuals Team">
 
             <div class="row g-3">
 
@@ -53,7 +64,7 @@
 
               <div class="col-sm-6">
                 <label class="form-label">Email Address</label>
-                <input type="email" name="email" class="form-control" placeholder="janeexample.com" required>
+                <input type="email" name="email" class="form-control" placeholder="jane@example.com" required>
               </div>
 
               <div class="col-sm-6">
