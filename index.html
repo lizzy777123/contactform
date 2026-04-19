@@ -1,27 +1,107 @@
+<section id="contact-2" class="contact-2 section">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <slot type="section-title"></slot>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/Awera Surprises Logo.png" alt="index.html">
-        <!-- 2 Colour green and black logo <h1 class="sitename">Awera<span> Surprises</span></h1> -->
-        <h1 class="sitename">Awera Surprises</h1>
-      </a>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="contact-2.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    <div class="row g-4">
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="sidebar-content">
+
+          <div class="sidebar-intro">
+            <h3 class="sidebar-heading">Get in Touch</h3>
+            <p class="sidebar-text">Send us a message and we’ll get back to you within 24 hours.</p>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-block-icon">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div class="contact-block-body">
+              <span class="contact-block-label">Email</span>
+              <a href="mailto:lizzy777123@outlook.com" class="contact-block-value">
+                lizzy777123@outlook.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="contact-block-icon">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <div class="contact-block-body">
+              <span class="contact-block-label">Phone</span>
+              <a href="tel:+447000000000" class="contact-block-value">+44 7000 000000</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="form-card">
+
+          <form action="https://formsubmit.co/lizzy777123@outlook.com" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- FIXED REDIRECT -->
+            <input type="hidden" name="_next" value="https://www.awerasuprises.com/contact">
+
+            <input type="hidden" name="_autoresponse" value="Hi 👋
+
+Thanks for contacting us. We’ve received your message and will respond within 24 hours.
+
+— Team Awera">
+
+            <div class="row g-3">
+
+              <div class="col-sm-6">
+                <label class="form-label">Your Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Jane Doe" required>
+              </div>
+
+              <div class="col-sm-6">
+                <label class="form-label">Email Address</label>
+                <input type="email" name="email" class="form-control" placeholder="jane@example.com" required>
+              </div>
+
+              <div class="col-sm-6">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" name="phone" class="form-control" placeholder="+44 7123 456789">
+              </div>
+
+              <div class="col-sm-6">
+                <label class="form-label">Topic</label>
+                <select name="subject" class="form-select" required>
+                  <option value="">Choose a topic</option>
+                  <option>General Inquiry</option>
+                  <option>Website Quote</option>
+                  <option>Support</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea name="message" rows="6" class="form-control" placeholder="Tell us how we can help..." required></textarea>
+              </div>
+
+              <div class="col-12 d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <p class="form-note mb-0">We typically respond within 24 hours.</p>
+                <button type="submit" class="btn btn-send">Submit Message</button>
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+      </div>
 
     </div>
-  </header>
 
+  </div>
 
-<p>  <li><a href="contact-2.html" class="active">Home</a></li> </p>
+</section>
